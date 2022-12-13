@@ -1,7 +1,8 @@
 const mongooseClient = require("mongoose");
+const cN = require("./package.json");
 
 mongooseClient.connect(
-  "mongodb://root:example@localhost:27017/",
+  cN.connection,
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err) => {
     if (err) console.log(err);
@@ -10,7 +11,7 @@ mongooseClient.connect(
 
 const NotesSchema = mongooseClient.Schema({
   title: String,
-  description: String,
+  description: String
 });
 
 const Notes = mongooseClient.model("Notes", NotesSchema);

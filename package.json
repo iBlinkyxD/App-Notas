@@ -4,5 +4,31 @@
     "express": "^4.18.2",
     "mongoose": "^6.8.0",
     "pug": "^3.0.2"
-  }
+  },
+  "name": "app-notas",
+  "description": "Kevin Joa Feng - 1100305",
+  "version": "1.0.0",
+  "main": "main.js",
+  "connection": "mongodb+srv://Blinky:blinky123@12factores.fgw4d9r.mongodb.net/test",
+  "port": "3000",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node cluster.js",
+    "seed": "node seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iBlinkyxD/App-Notas.git"
+  },
+  "keywords": [
+    "app",
+    "notas"
+  ],
+  "author": "Kevin Joa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iBlinkyxD/App-Notas/issues"
+  },
+  "homepage": "https://github.com/iBlinkyxD/App-Notas#readme"
+  
 }

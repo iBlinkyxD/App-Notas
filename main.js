@@ -7,6 +7,8 @@ const Notes = require("./database");
 const updateRouter = require("./update-router");
 const app = express();
 
+const config = require("./package.json");
+
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
@@ -87,6 +89,6 @@ app.post("/updatepage", (req, res, next) => {
   return next();
 });
 
-app.listen((arg) => {
+app.listen(config.port, () => {
   console.log("Server started.");
 });
